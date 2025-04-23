@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GameZone</title>
+    <link rel="stylesheet" href = "gamify.css">
+</head>
+<body>
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="rtx5080.jpeg"class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">RTX 5080</h2>
+                    <span class="cart-price"><i class='bx bx-rupee'></i>142,999</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button> 
+                    </div> 
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs 0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class='bx bxs-message-square-x' id ="cart-close"></i>
+    </div>
+    <div class="navbar">
+        <header>
+            <div class="head-left">
+                <img src="gamify.png" alt="logo" onclick = "navigateTo('gamify.html')">
+                <div class="dropdown">
+                    <button class = "prod">Products</button>
+                    <div class="dropdown-menu">
+                        <a href ="#">Graphics Card</a>
+                        <a href ="#">Processor</a>
+                        <a href ="#">Monitor</a>
+                        <a href ="#">Mouse</a>
+                        <a href ="#">Keyboard</a>
+                        <a href ="#">Headphones</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head-right">
+                <p id="auth-link"><a href="login.html"><i class="ri-user-line"></i>Sign-in</a></p>
+                <p><a href="#" onclick="navigateTo('about_us.html')">About Us</a></p>
+                <p><a href="#">Contact</a></p>
+                <p><a href="#">Help</a></p>
+                <p><button class="cart-toggle-btn"><i class='bx bx-shopping-bag'></i> Cart</button></p>
+            </div>
+    
+        </header>    
+    </div>
+    <section class="about-section">
+        <div class="row">
+            <div class="column image">
+                <img src="bg(3).jpg" alt="Gaming Headset">
+            </div>
+            <div class="column text">
+                <h2>Welcome to Gamify</h2>
+                <p>Welcome to Gamify where gaming begins.
+
+                    We're a team of gamers, tech enthusiasts, and digital adventurers who live and breathe gaming. Whether you're building a high-performance PC rig, leveling up your console experience, or looking for the latest game passes and accessories, we've got you covered.
+                    
+                    At Gamify, our mission is simple:
+                    To fuel your gaming experience with top-tier gear, fast delivery, and unbeatable prices.</p>
+            </div>
+        </div>
+        <div class="row reverse">
+            <div class="column text">
+                <h2>Console Power</h2>
+                <p>From Xbox to PlayStation, we stock the latest consoles, accessories, and game passes to keep you fully immersed in the action. Your next adventure is just a click away.Love your console gaming? We’ve got you covered. Our collection features the latest Xbox and PlayStation gear — including controllers, charging docks, headsets, and game passes that unlock exclusive content and perks. Whether you're grinding in a multiplayer arena or immersing yourself in cinematic single-player experiences, our console essentials are designed to keep you at the top of your game.</p>
+            </div>
+            <div class="column image">
+                <img src="bg(5).jpg" alt="PS4 Controller">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column image">
+                <img src="bg(4).jpg" alt="RGB Keyboard and Mouse">
+            </div>
+            <div class="column text">
+                <h2>PC Components</h2>
+                <p>Build your dream setup with our range of powerful PC parts and accessories. From glowing keyboards to beast-mode GPUs, we’ve got what you need to dominate.</p>
+            </div>
+        </div>
+    </section>
+    <script src = "gamify.js"></script>
+</body>
+</html>

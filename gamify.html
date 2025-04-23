@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link   href="gamify.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="head-left">
+            <img src="gamify.png" alt="logo" onclick="navigateTo('gamify.html')">
+            <div class="dropdown">
+                <button class = "prod">Products</button>
+                <div class="dropdown-menu">
+                    <a href ="#" onclick ="navigateTo('products.html')">Graphics Card</a>
+                    <a href ="#" onclick ="navigateTo('proces.html')">Processor</a>
+                    <a href ="#" onclick ="navigateTo('pc.html')">Monitor</a>
+                    <a href ="#" onclick = "navigateTo('mouse.html')">Mouse</a>
+                    <a href ="#" onclick = "navigateTo('keyboard.html')">Keyboard</a>
+                    <a href ="#" onclick = "navigateTo('headset.html')">Headphones</a>
+                </div>
+            </div>
+        </div>
+        <div class="head-right">
+            <p id="auth-link"><a href="login.html"><i class="ri-user-line"></i>Sign-in</a></p>
+            <p><a href="#" onclick="navigateTo('about_us.html')">About Us</a></p>
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Help</a></p>
+            <p><button class="cart-toggle-btn"><i class='bx bx-shopping-bag'></i> Cart</button></p>
+        </div>
+
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-vid">
+            <video class="hero-video" autoplay muted loop  >
+                <source src="valorant.mp4">
+            </video>
+        </div>
+        <div class="hero-info">
+            <h1>Gamify</h1>
+            <p>We at gamify,dont believe in boundaries ,limit is limitless
+            for us
+                 </p>
+                 <p> our Focus is on Better experience of user</p>
+                 
+            <button>Learn More</button>
+        </div>
+        <h1 class="gaming-text">The Gaming</h1>
+    </section>
+</div>
+<div class="cart">
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
+        <!-- <div class="cart-box">
+            <img src="rtx5080.jpeg"class="cart-img">
+            <div class="cart-detail">
+                <h2 class="cart-product-title">RTX 5080</h2>
+                <span class="cart-price"><i class='bx bx-rupee'></i>142,999</span>
+                <div class="cart-quantity">
+                    <button id="decrement">-</button>
+                    <span class="number">1</span>
+                    <button id="increment">+</button> 
+                </div> 
+            </div>
+            <i class="ri-delete-bin-line cart-remove"></i>
+        </div> -->
+    </div>
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs 0</div>
+    </div>
+    <button class="btn-buy">Buy Now</button>
+    <i class='bx bxs-message-square-x' id ="cart-close"></i>
+</div>
+    <section class="hero-2">
+         <p>Welcome to Gamify</p>
+         <h1>Make us YOUR buudy in this JOURNEY to new WORLD</h1>
+         
+         
+        <h4>Beyond just hardware and infrastructure,We connect GammingGeeks like you around the world !</h4>
+        <h5>Gamify focuses on concrete technology and AI in gaming</h5>
+        </section>
+        
+        <section class="info-section">
+            <h3>OUR PRODUCTS</h3>
+            <p> Gamify is where elite gaming meets cutting-edge hardware. From ultra-responsive mechanical keyboards to high-performance GPUs and immersive audio gear, we craft every product with one goal: giving gamers the competitive edge. Whether you're climbing the leaderboards or exploring open worlds, Gamify delivers the speed, precision, and style to take your game to the next level.</p>
+        
+        
+            <div class="info-cards">
+                <div class="card">
+                    <h1>Graphics Card</h1>
+                    <video src="5oseries.mp4" autoplay loop muted plays-inline onclick="navigateTo('products.html')"></video>
+                    
+ 
+                </div>
+                <div class="card">
+                    <h1>CPU</h1>
+                    <video src="Pc.mp4" autoplay loop muted plays-inline onclick="navigateTo('pc.html')"></video>
+ 
+                </div>
+                <div class="card">
+                    <h1>Monitor</h1>
+                    <video src="Monitor.mp4" autoplay loop muted plays-inline onclick="help()"></video>
+
+                </div>
+
+                <div class="card">
+                    <h1>Graphic Cards</h1>
+                    <video src="feature-4.mp4" autoplay loop muted plays-inline onclick="help()"></video>
+
+                </div>
+
+                <div class="card cx">
+                    <h1>Graphic Cards</h1>
+                    <video src="feature-5.mp4" autoplay loop muted plays-inline></video>
+
+                </div>
+            </div>
+        </section>
+</body>
+<script src="gamify.js"></script>
+</html>

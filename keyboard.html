@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link href="gamify.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head-left">
+            <img src="gamify.png" alt="logo" onclick = "navigateTo('gamify.html')">
+            <div class="dropdown">
+                <button class = "prod">Products</button>
+                <div class="dropdown-menu">
+                    <a href ="#" onclick ="navigateTo('products.html')">Graphics Card</a>
+                    <a href ="#" onclick ="navigateTo('proces.html')">Processor</a>
+                    <a href ="#" onclick ="navigateTo('pc.html')">Monitor</a>
+                    <a href ="#" onclick = "navigateTo('mouse.html')">Mouse</a>
+                    <a href ="#" onclick = "navigateTo('keyboard.html')">Keyboard</a>
+                    <a href ="#" onclick = "navigateTo('headset.html')">Headphones</a>
+                </div>
+            </div>
+        </div>
+        <div class="head-right">
+            <p id="auth-link"><a href="login.html"><i class="ri-user-line"></i>Sign-in</a></p>
+            <p><a href="#" onclick="navigateTo('about_us.html')">About Us</a></p>
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Help</a></p>
+            <p><button class="cart-toggle-btn"><i class='bx bx-shopping-bag'></i> Cart</button></p>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero-vid">
+            <img class="hero-video" src = "key-hero.jpg">
+                
+        </div>
+        <div class="hero-info">
+            <img src ="razer-logo.png" class = "logo">
+            <h1 class = "rtx" style = "color:white; margin-top:-100px;">Light Weight Gaming Mouse</h1>
+            <div class="graphics">
+                <p>Experience next-gen performance with the
+                    RTX 5080 for unmatched gaming realism.
+                </p>
+                <p>Experience dynamic visuals and efficient performance with the RTX Graphics Card.</p>
+            </div>
+                 
+
+        </div>
+    </section>
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="rtx5080.jpeg"class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">RTX 5080</h2>
+                    <span class="cart-price"><i class='bx bx-rupee'></i>142,999</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button> 
+                    </div> 
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs 0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class='bx bxs-message-square-x' id ="cart-close"></i>
+    </div>
+    <section class="shop">
+        <h1 class="heading">Gaming Mouse</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="image">
+                    <img src="keyyboard(1).jpg" class="rtx50">
+                </div>
+                <h2 class="product-title">Redragon M612 Predator RGB Wired Optical Gaming Mouse</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>10,199</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="keyyboard(2).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">SteelSeries Rival 650 Quantum Wireless Gaming Mouse - Rapid Charging Battery</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>12,168</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="keyyboard(3).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">ZEBRONICS WAR M, Wired Gaming Mouse with 6 Buttons, High Precision Sensor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>8,999</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="keyyboard(4).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">Razer Basilisk Ultimate HyperSpeed Wireless Gaming Mouse: Fastest Gaming Mouse Switch - 20K DPI Optical Sensor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>19,327</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="keyyboard(5).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">Logitech G502 Hero High Performance Wired USB Gaming Mouse, Hero 25K Sensor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>5,012</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="keyyboard(6).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">Razer Viper V2 Pro Hyperspeed Wireless Optical Gaming Mouse: 59g Ultra-Lightweight</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>13,390</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="gamify.js"></script>
+</body>
+</html>

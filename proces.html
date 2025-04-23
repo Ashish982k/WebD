@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTX series</title>
+    <link href="gamify.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head-left">
+            <img src="gamify.png" alt="logo" onclick = "navigateTo('gamify.html')">
+            <div class="dropdown">
+                <button class = "prod">Products</button>
+                <div class="dropdown-menu">
+                    <a href ="#" onclick ="navigateTo('products.html')">Graphics Card</a>
+                    <a href ="#" onlick = "navigateTo('proces.html')">Processor</a>
+                    <a href ="#" onclick ="navigateTo('pc.html')">Monitor</a>
+                    <a href ="#" onclick = "navigateTo('mouse.html')">Mouse</a>
+                    <a href ="#" onclick = "navigateTo('keyboard.html')">Keyboard</a>
+                    <a href ="#" onclick = "navigateTo('headset.html')">Headphones</a>
+                </div>
+            </div>
+        </div>
+        <div class="head-right">
+            <p id="auth-link"><a href="login.html"><i class="ri-user-line"></i>Sign-in</a></p>
+            <p><a href="#" onclick="navigateTo('about_us.html')">About Us</a></p>
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Help</a></p>
+            <p><button class="cart-toggle-btn"><i class='bx bx-shopping-bag'></i> Cart</button></p>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero-vid">
+            <img class="hero-video" src = "hero-cpu.jpg">
+                
+        </div>
+        <div class="hero-info">
+            <h1 class = "graphics-page">RYZEN</h1>
+            <h1 class = "rtx">Best Performance</h1>
+            <div class="graphics">
+                <p>Experience next-gen performance with the
+                    RTX 5080 for unmatched gaming realism.
+                </p>
+                <p>Experience dynamic visuals and efficient performance with the RTX Graphics Card.</p>
+            </div>
+                 
+
+        </div>
+    </section>
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="rtx5080.jpeg"class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">RTX 5080</h2>
+                    <span class="cart-price"><i class='bx bx-rupee'></i>142,999</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button> 
+                    </div> 
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs 0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class='bx bxs-message-square-x' id ="cart-close"></i>
+    </div>
+    <section class="shop">
+        <h1 class="heading">Computer CPU Processor</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="image">
+                    <img src="ryzen3200.jpeg" class="rtx50">
+                </div>
+                <h2 class="product-title">AMD Ryzen 3200G</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>12,999</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="ryzen3500.jpeg" class = "rtx50">
+                </div>
+                <h2 class="product-title">AMD Ryzen 3500X</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>15,999</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="ryzen5600x.jpeg" class = "rtx50">
+                </div>
+                <h2 class="product-title">AMD Ryzen 5600X</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>20,999</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="ryzen9600x.jpeg" class = "rtx50">
+                </div>
+                <h2 class="product-title">AMD Ryzen 9600X</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>159,999</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="inteli7.jpeg" class = "rtx50">
+                </div>
+                <h2 class="product-title">Intel core I7</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>206,488</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="inteli5.jpeg" class="rtx50">
+                </div>
+                <h2 class="product-title">Intel core I5</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>142,999</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="gamify.js"></script>
+</body>
+</html>
