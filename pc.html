@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTX series</title>
+    <link href="gamify.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head-left">
+            <img src="gamify.png" alt="logo" onclick = "navigateTo('gamify.html')">
+            <div class="dropdown">
+                <button class = "prod">Products</button>
+                <div class="dropdown-menu">
+                    <a href ="#" onclick ="navigateTo('products.html')">Graphics Card</a>
+                    <a href ="#" onclick ="navigateTo('proces.html')">Processor</a>
+                    <a href ="#" onclick ="navigateTo('pc.html')">Monitor</a>
+                    <a href ="#" onclick = "navigateTo('mouse.html')">Mouse</a>
+                    <a href ="#" onclick = "navigateTo('keyboard.html')">Keyboard</a>
+                    <a href ="#" onclick = "navigateTo('headset.html')">Headphones</a>
+                </div>
+            </div>
+        </div>
+        <div class="head-right">
+            <p id="auth-link"><a href="login.html"><i class="ri-user-line"></i>Sign-in</a></p>
+            <p><a href="#" onclick="navigateTo('about_us.html')">About Us</a></p>
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Help</a></p>
+            <p><button class="cart-toggle-btn"><i class='bx bx-shopping-bag'></i> Cart</button></p>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero-vid">
+            <img class="hero-video" src = "pc-hero(3).jpg">
+                
+        </div>
+        <div class="hero-info">
+            <h1 class = "graphics-page" style="visibility: hidden;">NVDIA</h1>
+            <h1 class = "rtx" style="visibility: hidden;">RTX Series Graphics Card</h1>
+            <div class="graphics">
+                <p>EAdvanced display technology for vibrant visuals and smooth performance.</p>
+                <p>High-quality panels designed for clarity, color accuracy, and fast response.</p>
+            </div>
+                 
+
+        </div>
+    </section>
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="rtx5080.jpeg"class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">RTX 5080</h2>
+                    <span class="cart-price"><i class='bx bx-rupee'></i>142,999</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button> 
+                    </div> 
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs 0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class='bx bxs-message-square-x' id ="cart-close"></i>
+    </div>
+    <section class="shop">
+        <h1 class="heading">MONITOR ZONE</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(1).jpg" class="rtx50">
+                </div>
+                <h2 class="product-title">ACER EB321HQU 32 Inch QHD 60Hz IPS Panel 104% SRGB 4MS IPS Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i> 14,199.00</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(2).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">SAMSUNG Odyssey G8 LS34BG852SWXXL 34 Inch QHD 175Hz OLED Panel Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>81,999 </span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(3).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">MSI G2422C 24 Inch FHD 180Hz VA Panel 85% SRGB 1MS Adaptive Sync VA Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>10,715</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(4).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">VIEWSONIC VX2728J 27 Inch FHD 180Hz IPS Panel 104%SRGB 0.5MS IPS Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>17,995</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(5).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">SAMSUNG Odyssey G5 LS27DG502EWXXL 27 Inch 2K QHD 180HzFreesync Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>20,499</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(6).jpg" class = "rtx50">
+                </div>
+                <h2 class="product-title">LG 27MP450-B 27 Inch FHD 75Hz IPS Panel 72%SRGB 5MS AMD Free Sync IPS Business Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>11,295</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(7).jpg" class="rtx50">
+                </div>
+                <h2 class="product-title">LG UltraGear 27GQ50F-B 27 Inch FHD 165Hz VA Panel 99% SRGB 1ms AMD Freesync Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>14,999</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+     
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(3).jpg" class="rtx50">
+                </div>
+                <h2 class="product-title">BENQ ZOWIE XL2546X 25 Inch FHD 240Hz TN Panel 1MS TN Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>41,650</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="image">
+                    <img src="pc(9).jpg" class="rtx50">
+                </div>
+                <h2 class="product-title">LG UltraGear 24GN60R-B 24 Inch FHD 144Hz IPS Panel 99% SRGB 1ms AMD Freesync IPS Gaming Monitor</h2>
+                <div class="prices">
+                    <span class="price"><i class='bx bx-rupee'></i>11,755</span>
+                    <button class="add"><i class='bx bx-shopping-bag'></i>Add To cart</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="gamify.js"></script>
+</body>
+</html>
