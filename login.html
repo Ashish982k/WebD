@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Login Form -->
+        <div class="login">
+            <form id="login-form">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" id = "user" placeholder="Username">
+                    <i class='bx bx-user text'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id = "pass" placeholder="Password">
+                    <i class='bx bx-lock-alt pass'></i>
+                </div>
+                <div class="forgot">
+                    <span class="checker">
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember Me</label>
+                    </span>
+                    <a href="#" class="forgotten">Forgot Password?</a>
+                </div>
+                <button class="button" id="form" type = "submit" onclick="func()">Login</button>
+
+                <div class="login-signup">
+                    Don't have an Account?
+                    <a href="#" id="sign-up">Sign Up</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="login-sign-up">
+            <form id="signup-form">
+                <h1>Sign Up</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username">
+                    <i class='bx bx-user text'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password">
+                    <i class='bx bx-lock-alt pass'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Confirm Password">
+                    <i class='bx bx-lock-alt pass'></i>
+                </div>
+                <button class="button" type = "submit" onclick="func()">Register Now</button>
+
+                <div class="login-signup">
+                    Already have an Account?
+                    <a href="#" id="login">Login</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
