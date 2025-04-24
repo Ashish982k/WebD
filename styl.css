@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.buy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 9999;
+}
+
+
+.buy-now {
+  width: 400px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.buy-now h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.buy-now label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555;
+  text-align: left;
+}
+
+.buy-now input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button.complete,
+button.cancel {
+  flex: 1;
+  padding: 12px;
+  margin-bottom:15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button.complete {
+  background-color: #00b894;
+  color: white;
+  transition:0.3s ease-in;
+}
+
+button.complete:hover {
+  background-color: #019875;
+  transform: scale(1.05);
+}
+
+button.cancel {
+  background-color: #d63031;
+  color: white;
+  transition:0.3s ease-in;
+}
+
+button.cancel:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
