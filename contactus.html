@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="styler.css">
 </head>
 <body>
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="rtx5080.jpeg"class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">RTX 5080</h2>
+                    <span class="cart-price"><i class='bx bx-rupee'></i>142,999</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button> 
+                    </div> 
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs 0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class='bx bxs-message-square-x' id ="cart-close"></i>
+    </div>
+    <div class="navbar">
+        <header>
+            <div class="head-left">
+                <img src="gamify.png" alt="logo" onclick = "navigateTo('gamify.html')">
+                <div class="dropdown">
+                    <button class = "prod">Products</button>
+                    <div class="dropdown-menu">
+                        <a href ="#">Graphics Card</a>
+                        <a href ="#">Processor</a>
+                        <a href ="#">Monitor</a>
+                        <a href ="#">Mouse</a>
+                        <a href ="#">Keyboard</a>
+                        <a href ="#">Headphones</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head-right">
+                <p id="auth-link"><a href="login.html"><i class="ri-user-line"></i>Sign-in</a></p>
+                <p><a href="#" onclick="navigateTo('about_us.html')">About Us</a></p>
+                <p><a href="#" onclick = "navigateTo('contactus.html')">Contact </a></p>
+                <p><a href="#">Help</a></p>
+                <p><button class="cart-toggle-btn"><i class='bx bx-shopping-bag'></i> Cart</button></p>
+            </div>
+    
+        </header>    
+    </div>
     <div class="container">
       <div class="contact-container">
         <h1>Contact Us</h1>
