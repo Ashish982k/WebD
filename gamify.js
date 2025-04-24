@@ -193,3 +193,36 @@ const updatePrice = function(){
 };
 
 loadCart();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buyNowBtn = document.querySelector(".btn-buy");
+    const buyer = document.querySelector(".buyer");
+    const cancelBtn = document.querySelector(".cancel");
+
+    const completeBtn = document.querySelector(".complete");
+  
+    if (buyNowBtn && buyer && cancelBtn) {
+        buyNowBtn.addEventListener("click", () => {
+            buyer.style.display = "flex";
+        });
+
+        cancelBtn.addEventListener("click", () => {
+            buyer.style.display = "none";
+        });
+
+        completeBtn.addEventListener("click", () =>{
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const address = document.getElementById("address").value.trim();
+
+            if(!phone || !name || !address){
+                alert("Please complete your information");
+                return;
+            }
+
+            alert("Order has been placed successfully");
+            buyer.display.style = 'none';
+        });
+    }
+});
